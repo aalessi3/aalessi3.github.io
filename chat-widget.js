@@ -3,7 +3,7 @@
   
   // Configuration
   const CONFIG = {
-    API_URL: 'https://chatbot-cumnkyn2b-alex-alessis-projects.vercel.app/api/chat_hardcode', // Replace with your actual Vercel URL
+    API_URL: 'https://chatbot-4vq46tdcw-alex-alessis-projects.vercel.app/api/chat_gpt', // Replace with your actual Vercel URL
     WIDGET_ID: 'chatbot-widget-' + Date.now(),
   };
   
