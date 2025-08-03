@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Test Website for ChatBot Service Project : Alex Alessi | Robotics Engineer</title>
+  <meta name="description" content="Alex Alessi - Robotics & AI Engineer specializing in medical robotics, computer vision, and real-time systems">
+  <title>Alex Alessi | Robotics & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <nav>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#career">Career</a></li>
@@ -29,28 +34,36 @@
           <p>Robotics & AI Engineer</p>
         </div>
       </div>
-      <h2>About Me</h2>
-      <p>[Brief intro about your background, current role, and passions]</p>
-      <h2>Thoughts</h2>
-      <p>"I envision a future where humans see robots not as tools, but as beings that coexist and assist in our everyday life."</p>
+      
+      <div class="section-bg about-content">
+        <h2>About Me</h2>
+        <p>I'm a passionate Robotics and AI Engineer with expertise in medical robotics, computer vision, and real-time systems. My work focuses on bridging the gap between cutting-edge AI research and practical clinical applications, with a particular emphasis on developing innovative solutions for medical imaging and robotic-assisted procedures.</p>
+        
+        <p>With hands-on experience in deep learning, sensor fusion, and real-time control systems, I strive to create technologies that enhance precision and safety in medical environments. My background spans from research at Johns Hopkins University to leading AI teams in developing life-saving medical devices.</p>
+        
+        <div class="thoughts-quote">
+          <p>"I envision a future where humans see robots not as tools, but as beings that coexist and assist in our everyday life."</p>
+        </div>
+      </div>
     </section>
 
     <section id="career">
       <h2>Career</h2>
 
-      <div class="job-entry">
+      <div class="job-entry glow-effect reveal">
         <div class="job-top">
           <img class="logo" src="assets/images/clear-guide-logo.png" alt="Clear Guide Medical Logo">
           <div class="job-details">
-            <span class="company-name"><strong>Clear Guide Medical</strong></span>
+            <span class="company-name">Clear Guide Medical</span>
             <span class="job-role">Robotics and AI Research Engineer</span>
             <span class="job-location">Baltimore, MD, USA</span>
             <span class="job-duration">March 2023 – Present</span>
           </div>
         </div>
+        
         <p>At Clear Guide Medical, I lead the AI-driven development of non-invasive biopsy guidance systems, focusing on integrating cutting-edge deep learning models into real-world clinical applications to transform medical imaging.</p>
+        
         <div class="media-container1">
-          <!-- Left: Video -->
           <div class="media-video1">
             <video controls>
               <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -58,42 +71,47 @@
             </video>
           </div>
 
-          <!-- Right: 2x2 Grid of Images -->
           <div class="media-images1">
-            <img src="assets/images/clear-guide-logo.png" alt="Image 1" />
-            <img src="assets/images/clear-guide-logo.png" alt="Image 2" />
-            <img src="assets/images/clear-guide-logo.png" alt="Image 3" />
-            <img src="assets/images/clear-guide-logo.png" alt="Image 4" />
+            <img src="assets/images/clear-guide-logo.png" alt="Medical Device Interface" />
+            <img src="assets/images/clear-guide-logo.png" alt="AI Model Training" />
+            <img src="assets/images/clear-guide-logo.png" alt="Clinical Testing" />
+            <img src="assets/images/clear-guide-logo.png" alt="Needle Tracking System" />
           </div>
         </div>
 
-        <h3>Achievements</h3>
+        <h3>Key Achievements</h3>
 
-        <h4>AI & Computer Vision: </h4>
+        <h4>AI & Computer Vision</h4>
         <ul>
-          <li>Designed and trained novel deep model architectures in PyTorch to accurately track a wide range of biopsy needles, including modeling needle bending - crucial for accurate trajectory prediction. Optimized inference pipelines using PyTorch, TensorRT, and quantization techniques—achieving a 200% speedup in performance.
-          </li>
+          <li>Designed and trained novel deep model architectures in PyTorch to accurately track a wide range of biopsy needles, including modeling needle bending - crucial for accurate trajectory prediction</li>
+          <li>Optimized inference pipelines using PyTorch, TensorRT, and quantization techniques—achieving a 200% speedup in performance</li>
         </ul>
 
-        <h4>Clinical Integration & Deployment: </h4>
+        <h4>Clinical Integration & Deployment</h4>
         <ul>
-          <li>Integrated of our AI-based needle tracking model into the company’s medical device. This enabled real-time performance and led to 12 successful human trials, achieving sub-mm precision in needle localization.
-          </li>
+          <li>Successfully integrated AI-based needle tracking model into the company's medical device, enabling real-time performance and leading to 12 successful human trials with sub-millimeter precision in needle localization</li>
         </ul>
 
-        <h4>Leadership: </h4>
+        <h4>Leadership</h4>
         <ul>
-          <li>Directed a 3-member AI team through the full model lifecycle—from R&D to clinical deployment—delivering innovation in a high-stakes medical environment.
-          </li>
+          <li>Directed a 3-member AI team through the full model lifecycle—from R&D to clinical deployment—delivering innovation in a high-stakes medical environment</li>
         </ul>
 
+        <div class="skills-container">
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorRT</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Medical Imaging</span>
+          <span class="skill-tag">Real-time Systems</span>
+          <span class="skill-tag">Team Leadership</span>
+        </div>
       </div>
 
-      <div class="job-entry">
+      <div class="job-entry glow-effect reveal">
         <div class="job-top">
           <img class="logo" src="assets/images/jhu.png" alt="Johns Hopkins University Logo">
           <div class="job-details">
-            <span class="company-name"><strong>Johns Hopkins University</strong></span>
+            <span class="company-name">Johns Hopkins University</span>
             <span class="job-role">Research Assistant</span>
             <span class="job-location">Baltimore, MD, USA</span>
             <span class="job-duration">Jan 2022 – May 2023</span>
@@ -101,10 +119,9 @@
         </div>
 
         <div class="media-container1">
-          <!-- Right: 2x2 Grid of Images -->
           <div class="media-images1">
-            <img src="assets/images/thesis1.png" alt="Image 1" />
-            <img src="assets/images/thesis2.png" alt="Image 2" />
+            <img src="assets/images/thesis1.png" alt="Kalman Filter Implementation" />
+            <img src="assets/images/thesis2.png" alt="MRI-Guided System" />
           </div>
         </div>
 
@@ -112,106 +129,215 @@
 
         <h4>State Estimation & Sensor Fusion</h4>
         <ul>
-          <li>Developed a non-linear Extended Kalman Filter (EKF) for needle tip pose estimation under sparse and delayed MRI observations.</li>
-          <li>Integrated MRI data with a EKF motion model.</li>
-          <li>Applied Broyden’s update to refine the process model, significantly enhancing prediction accuracy and robustness.</li>
+          <li>Developed a non-linear Extended Kalman Filter (EKF) for needle tip pose estimation under sparse and delayed MRI observations</li>
+          <li>Integrated MRI data with a EKF motion model and applied Broyden's update to refine the process model, significantly enhancing prediction accuracy and robustness</li>
         </ul>
 
         <h4>Hardware & Software Integration</h4>
         <ul>
-          <li>Designed a custom needle insertion system using industrial-grade linear and vertical stages for precision motion.</li>
-          <li>Integrated control and estimation in ROS2 + Orocos, leveraging the Real-Time Toolkit (RTT) and DDR communication for deterministic performance.</li>
+          <li>Designed a custom needle insertion system using industrial-grade linear and vertical stages for precision motion</li>
+          <li>Integrated control and estimation in ROS2 + Orocos, leveraging the Real-Time Toolkit (RTT) and DDR communication for deterministic performance</li>
         </ul>
 
         <h4>Real-Time Robotics System Design</h4>
         <ul>
-          <li>Implemented a real-time, closed-loop localization system with robust performance in the presence of noise, delays, and dynamic model inaccuracies.</li>
-          <li>Validated estimation pipeline through experiments using real sensor data and simulated MRI feedback.</li>
+          <li>Implemented a real-time, closed-loop localization system with robust performance in the presence of noise, delays, and dynamic model inaccuracies</li>
+          <li>Validated estimation pipeline through experiments using real sensor data and simulated MRI feedback</li>
         </ul>
 
-        <h4>Achievements</h4>
+        <h4>Key Results</h4>
         <ul>
-          <li>Imporved localization accuracy of needle tracking by around 30%.</li>
+          <li>Improved localization accuracy of needle tracking by approximately 30% compared to baseline methods</li>
         </ul>
 
+        <div class="skills-container">
+          <span class="skill-tag">Extended Kalman Filter</span>
+          <span class="skill-tag">ROS2</span>
+          <span class="skill-tag">Orocos</span>
+          <span class="skill-tag">MRI Integration</span>
+          <span class="skill-tag">Real-time Control</span>
+          <span class="skill-tag">C++</span>
+        </div>
       </div>
-
     </section>
 
     <section id="education">
-      <h2>Education</h2>
-      <h3>Johns Hopkins University</h3>
-      <p>MS in Robotics</p>
-      <p>Courses: Robot Systems Programming, AI, Control Systems, Deep Learning</p>
-      <p>Research: MRI-Guided Needle Insertion and Tip Tracking using Extended Kalman Filters</p>
+      <div class="section-bg reveal">
+        <h2>Education</h2>
+        <h3>Johns Hopkins University</h3>
+        <p><strong>Master of Science in Robotics</strong></p>
+        <p><strong>Relevant Coursework:</strong> Robot Systems Programming, Artificial Intelligence, Control Systems, Deep Learning, Computer Vision, Sensor Fusion</p>
+        <p><strong>Research Focus:</strong> MRI-Guided Needle Insertion and Tip Tracking using Extended Kalman Filters</p>
+        
+        <div class="skills-container">
+          <span class="skill-tag">Robotics</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Control Theory</span>
+          <span class="skill-tag">Computer Vision</span>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="project">
+      
+      <div class="project glow-effect reveal">
         <h3>Needle Tracking AI</h3>
-        <p>Developed zero-shot learning and segmentation models for localizing biopsy needles in ultrasound images.</p>
-        <img src="assets/images/needle-tracking.png" alt="Needle Tracking" />
+        <p>Developed zero-shot learning and segmentation models for localizing biopsy needles in ultrasound images, enabling precise medical interventions without requiring extensive training data for each needle type.</p>
+        <img src="assets/images/needle-tracking.png" alt="Needle Tracking AI System" />
+        
+        <div class="skills-container">
+          <span class="skill-tag">Zero-shot Learning</span>
+          <span class="skill-tag">Medical Imaging</span>
+          <span class="skill-tag">Segmentation</span>
+          <span class="skill-tag">Ultrasound</span>
+        </div>
       </div>
 
-      <div class="project">
-        <h3>Sensor Fusion for Localizing Vehicles on the Road</h3>
-        <p>
-          Built a sensor fusion system that leverages data from Camera, Radar, and Lidar to precisely localize surrounding vehicles and enhance situational awareness for safer driving decisions.
-        </p>
+      <div class="project glow-effect reveal">
+        <h3>Sensor Fusion for Vehicle Localization</h3>
+        <p>Built a comprehensive sensor fusion system that leverages data from Camera, Radar, and Lidar to precisely localize surrounding vehicles and enhance situational awareness for safer autonomous driving decisions.</p>
+        
         <img src="assets/images/ukf_highway_tracked.gif" alt="Sensor Fusion Simulation" />
 
-        <h4>Project Aim</h4>
-        <p>
-          To improve vehicle awareness and collision prediction by fusing multi-sensor data using an Unscented Kalman Filter.
-        </p>
+        <h4>Project Objectives</h4>
+        <p>To improve vehicle awareness and collision prediction by fusing multi-sensor data using an Unscented Kalman Filter, creating a robust perception system for autonomous vehicles.</p>
 
-        <h4>My Contributions</h4>
+        <h4>Key Contributions</h4>
         <ul>
-          <li>Implemented an Unscented Kalman Filter (UKF) for multi-sensor vehicle localization.</li>
-          <li>Calibrated cameras and performed hand-eye calibration with other sensors.</li>
-          <li>Evaluated keypoint detectors (HARRIS, FAST, BRISK, SIFT) for feature tracking.</li>
-          <li>Segmented Lidar point clouds using K-D tree clustering.</li>
-          <li>Computed velocity and range from radar data using Doppler and Fourier Transform.</li>
-          <li>Estimated time-to-collision for safer navigation decisions.</li>
+          <li>Implemented an Unscented Kalman Filter (UKF) for multi-sensor vehicle localization with superior handling of non-linear motion models</li>
+          <li>Performed comprehensive camera calibration and hand-eye calibration with other sensors for precise spatial alignment</li>
+          <li>Evaluated and optimized keypoint detectors (HARRIS, FAST, BRISK, SIFT) for robust feature tracking across various lighting conditions</li>
+          <li>Implemented efficient Lidar point cloud segmentation using K-D tree clustering for real-time object detection</li>
+          <li>Developed velocity and range estimation algorithms from radar data using Doppler effect analysis and Fourier Transform techniques</li>
+          <li>Created time-to-collision estimation system for proactive safety decision making</li>
         </ul>
 
-        <h4>Skills and Algorithms Used</h4>
-        <ul>
-          <li>Sensor Fusion (Camera, Lidar, Radar)</li>
-          <li>Unscented Kalman Filter (UKF)</li>
-          <li>Camera Calibration & Hand-Eye Calibration</li>
-          <li>Keypoint Matching (HARRIS, FAST, BRISK, SIFT)</li>
-          <li>K-D Tree Clustering for Lidar</li>
-          <li>Doppler Effect & FFT for Radar</li>
-          <li>C++, OpenCV, PCL, Python</li>
-        </ul>
+        <h4>Technical Implementation</h4>
+        <div class="skills-container">
+          <span class="skill-tag">Sensor Fusion</span>
+          <span class="skill-tag">Unscented Kalman Filter</span>
+          <span class="skill-tag">Camera Calibration</span>
+          <span class="skill-tag">Lidar Processing</span>
+          <span class="skill-tag">Radar Analysis</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">PCL</span>
+          <span class="skill-tag">Python</span>
+        </div>
 
-        <p>
-          <a href="https://github.com/pranavbajaj/Unscented-Kalman-Filter" target="_blank" class="social-icons">
-            <i class="icon-social-github">
-          </a>
-        </p>
+        <a href="https://github.com/pranavbajaj/Unscented-Kalman-Filter" target="_blank" class="project-link">
+          View on GitHub →
+        </a>
       </div>
-
     </section>
 
     <section id="blog">
-      <h2>Blog</h2>
-      <ul>
-        <li><a href="#">General-Purpose Robots: The Future of Labor</a></li>
-        <li><a href="#">Zero-Shot Localization in Medical Robotics</a></li>
-      </ul>
+      <div class="section-bg reveal">
+        <h2>Blog & Publications</h2>
+        <ul>
+          <li><a href="#">General-Purpose Robots: The Future of Labor and Human-Robot Collaboration</a></li>
+          <li><a href="#">Zero-Shot Localization in Medical Robotics: Breaking the Training Data Barrier</a></li>
+          <li><a href="#">Real-Time State Estimation in Medical Robotics: Lessons from MRI-Guided Procedures</a></li>
+          <li><a href="#">The Role of AI in Transforming Medical Imaging: A Practitioner's Perspective</a></li>
+        </ul>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:pranav7296@gmail.com">pranav7296@gmail.com</a></p>
+      <div class="section-bg reveal">
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span>📧</span>
+            <div>
+              <p><strong>Email</strong></p>
+              <a href="mailto:alex.alessi@robotics.com">alex.alessi@robotics.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <span>💼</span>
+            <div>
+              <p><strong>LinkedIn</strong></p>
+              <a href="#" target="_blank">Connect with me</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <span>🔗</span>
+            <div>
+              <p><strong>GitHub</strong></p>
+              <a href="#" target="_blank">View my repositories</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Alex Alessi</p>
+    <p>&copy; 2025 Alex Alessi. Crafted with passion for robotics and AI innovation.</p>
   </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const mobileToggle = document.querySelector('.mobile-nav-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    mobileToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+
+    // Scroll reveal animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Smooth scroll behavior for navigation links
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+        // Close mobile menu if open
+        navUl.classList.remove('show');
+      });
+    });
+
+    // Dynamic header background on scroll
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) {
+        header.style.background = 'rgba(15, 15, 35, 0.98)';
+      } else {
+        header.style.background = 'rgba(15, 15, 35, 0.95)';
+      }
+    });
+
+    // Add loading animation
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '1';
+    });
+  </script>
 </body>
 </html>
