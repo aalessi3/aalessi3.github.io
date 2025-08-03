@@ -455,7 +455,6 @@ footer {
 
 .glow-effect:hover::before {
   opacity: 0.7;
-  animation: rotate 2s linear infinite;
 }
 
 @keyframes rotate {
