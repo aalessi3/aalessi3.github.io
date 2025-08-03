@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Website for ChatBot Service Project : Alex Alessi | Robotics Engineer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="home-intro">
+        <img src="assets/images/Alessi_headshot.jpg" alt="Alex Alessi" class="profile" />
+        <div class="intro-text">
+          <h1>Alex Alessi</h1>
+          <p>Robotics & AI Engineer</p>
+        </div>
+      </div>
+      <h2>About Me</h2>
+      <p>[Brief intro about your background, current role, and passions]</p>
+      <h2>Thoughts</h2>
+      <p>"I envision a future where humans see robots not as tools, but as beings that coexist and assist in our everyday life."</p>
+    </section>
+
+    <section id="career">
+      <h2>Career</h2>
+
+      <div class="job-entry">
+        <div class="job-top">
+          <img class="logo" src="assets/images/clear-guide-logo.png" alt="Clear Guide Medical Logo">
+          <div class="job-details">
+            <span class="company-name"><strong>Clear Guide Medical</strong></span>
+            <span class="job-role">Robotics and AI Research Engineer</span>
+            <span class="job-location">Baltimore, MD, USA</span>
+            <span class="job-duration">March 2023 – Present</span>
+          </div>
+        </div>
+        <p>At Clear Guide Medical, I lead the AI-driven development of non-invasive biopsy guidance systems, focusing on integrating cutting-edge deep learning models into real-world clinical applications to transform medical imaging.</p>
+        <div class="media-container1">
+          <!-- Left: Video -->
+          <div class="media-video1">
+            <video controls>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Right: 2x2 Grid of Images -->
+          <div class="media-images1">
+            <img src="assets/images/clear-guide-logo.png" alt="Image 1" />
+            <img src="assets/images/clear-guide-logo.png" alt="Image 2" />
+            <img src="assets/images/clear-guide-logo.png" alt="Image 3" />
+            <img src="assets/images/clear-guide-logo.png" alt="Image 4" />
+          </div>
+        </div>
+
+        <h3>Achievements</h3>
+
+        <h4>AI & Computer Vision: </h4>
+        <ul>
+          <li>Designed and trained novel deep model architectures in PyTorch to accurately track a wide range of biopsy needles, including modeling needle bending - crucial for accurate trajectory prediction. Optimized inference pipelines using PyTorch, TensorRT, and quantization techniques—achieving a 200% speedup in performance.
+          </li>
+        </ul>
+
+        <h4>Clinical Integration & Deployment: </h4>
+        <ul>
+          <li>Integrated of our AI-based needle tracking model into the company’s medical device. This enabled real-time performance and led to 12 successful human trials, achieving sub-mm precision in needle localization.
+          </li>
+        </ul>
+
+        <h4>Leadership: </h4>
+        <ul>
+          <li>Directed a 3-member AI team through the full model lifecycle—from R&D to clinical deployment—delivering innovation in a high-stakes medical environment.
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="job-entry">
+        <div class="job-top">
+          <img class="logo" src="assets/images/jhu.png" alt="Johns Hopkins University Logo">
+          <div class="job-details">
+            <span class="company-name"><strong>Johns Hopkins University</strong></span>
+            <span class="job-role">Research Assistant</span>
+            <span class="job-location">Baltimore, MD, USA</span>
+            <span class="job-duration">Jan 2022 – May 2023</span>
+          </div>
+        </div>
+
+        <div class="media-container1">
+          <!-- Right: 2x2 Grid of Images -->
+          <div class="media-images1">
+            <img src="assets/images/thesis1.png" alt="Image 1" />
+            <img src="assets/images/thesis2.png" alt="Image 2" />
+          </div>
+        </div>
+
+        <p><strong>Overview:</strong> Developed an Extended Kalman Filter-based framework for real-time needle tip localization during MRI-guided prostate biopsies, with a focus on improving estimation accuracy despite sparse observations and needle bending in soft tissue.</p>
+
+        <h4>State Estimation & Sensor Fusion</h4>
+        <ul>
+          <li>Developed a non-linear Extended Kalman Filter (EKF) for needle tip pose estimation under sparse and delayed MRI observations.</li>
+          <li>Integrated MRI data with a EKF motion model.</li>
+          <li>Applied Broyden’s update to refine the process model, significantly enhancing prediction accuracy and robustness.</li>
+        </ul>
+
+        <h4>Hardware & Software Integration</h4>
+        <ul>
+          <li>Designed a custom needle insertion system using industrial-grade linear and vertical stages for precision motion.</li>
+          <li>Integrated control and estimation in ROS2 + Orocos, leveraging the Real-Time Toolkit (RTT) and DDR communication for deterministic performance.</li>
+        </ul>
+
+        <h4>Real-Time Robotics System Design</h4>
+        <ul>
+          <li>Implemented a real-time, closed-loop localization system with robust performance in the presence of noise, delays, and dynamic model inaccuracies.</li>
+          <li>Validated estimation pipeline through experiments using real sensor data and simulated MRI feedback.</li>
+        </ul>
+
+        <h4>Achievements</h4>
+        <ul>
+          <li>Imporved localization accuracy of needle tracking by around 30%.</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <h3>Johns Hopkins University</h3>
+      <p>MS in Robotics</p>
+      <p>Courses: Robot Systems Programming, AI, Control Systems, Deep Learning</p>
+      <p>Research: MRI-Guided Needle Insertion and Tip Tracking using Extended Kalman Filters</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Needle Tracking AI</h3>
+        <p>Developed zero-shot learning and segmentation models for localizing biopsy needles in ultrasound images.</p>
+        <img src="assets/images/needle-tracking.png" alt="Needle Tracking" />
+      </div>
+
+      <div class="project">
+        <h3>Sensor Fusion for Localizing Vehicles on the Road</h3>
+        <p>
+          Built a sensor fusion system that leverages data from Camera, Radar, and Lidar to precisely localize surrounding vehicles and enhance situational awareness for safer driving decisions.
+        </p>
+        <img src="assets/images/ukf_highway_tracked.gif" alt="Sensor Fusion Simulation" />
+
+        <h4>Project Aim</h4>
+        <p>
+          To improve vehicle awareness and collision prediction by fusing multi-sensor data using an Unscented Kalman Filter.
+        </p>
+
+        <h4>My Contributions</h4>
+        <ul>
+          <li>Implemented an Unscented Kalman Filter (UKF) for multi-sensor vehicle localization.</li>
+          <li>Calibrated cameras and performed hand-eye calibration with other sensors.</li>
+          <li>Evaluated keypoint detectors (HARRIS, FAST, BRISK, SIFT) for feature tracking.</li>
+          <li>Segmented Lidar point clouds using K-D tree clustering.</li>
+          <li>Computed velocity and range from radar data using Doppler and Fourier Transform.</li>
+          <li>Estimated time-to-collision for safer navigation decisions.</li>
+        </ul>
+
+        <h4>Skills and Algorithms Used</h4>
+        <ul>
+          <li>Sensor Fusion (Camera, Lidar, Radar)</li>
+          <li>Unscented Kalman Filter (UKF)</li>
+          <li>Camera Calibration & Hand-Eye Calibration</li>
+          <li>Keypoint Matching (HARRIS, FAST, BRISK, SIFT)</li>
+          <li>K-D Tree Clustering for Lidar</li>
+          <li>Doppler Effect & FFT for Radar</li>
+          <li>C++, OpenCV, PCL, Python</li>
+        </ul>
+
+        <p>
+          <a href="https://github.com/pranavbajaj/Unscented-Kalman-Filter" target="_blank" class="social-icons">
+            <i class="icon-social-github">
+          </a>
+        </p>
+      </div>
+
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <ul>
+        <li><a href="#">General-Purpose Robots: The Future of Labor</a></li>
+        <li><a href="#">Zero-Shot Localization in Medical Robotics</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:pranav7296@gmail.com">pranav7296@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alex Alessi</p>
+  </footer>
+</body>
+</html>

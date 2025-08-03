@@ -1,0 +1,295 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #0d1117;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #58a6ff;
+}
+
+/* Section Styling */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: #0d1117;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: #0d1117;
+  margin-bottom: 0.1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.0rem;
+}
+
+/* Home Section Layout */
+.home-intro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  margin-bottom: 2rem;
+}
+
+.profile {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Career & Project Cards */
+.job-entry, .project {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.job-entry img, .project img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* Blog List */
+#blog ul {
+  list-style: disc inside;
+  margin-top: 1rem;
+}
+
+#blog li {
+  margin-bottom: 0.75rem;
+}
+
+/* Contact Info */
+#contact a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1117;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+
+.job-entry {
+  margin-bottom: 2.5rem;
+  max-width: 100%; /* or a higher value */
+  width: 100%;
+}
+
+.job-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.job-entry .logo {
+  flex-shrink: 0;
+  margin-right: 1rem;
+  width: 100px;
+  height: auto;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+
+.job-entry .job-top .job-details .company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Media Container For Clear Guide Medical */
+
+.media-container1 {
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: center;     /* center content horizontally */
+  gap: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 700px;        /* max container width */
+  padding: 0 1rem;
+}
+
+.media-video1 {
+  width: 100%;
+  max-width: 700px; /* max container width for the video */
+  margin: 0 auto;   /* center the container */
+}
+
+.media-video1 video {
+  width: 100%;      /* make video fill container width */
+  height: auto;     /* maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block;   /* remove any inline gap below the video */
+}
+
+.media-images1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 700px; /* max grid container width */
+  margin: 0 auto;   /* center the grid */
+}
+
+.media-images1 img {
+  width: 100%;       /* fill the grid cell */
+  height: auto;      /* keep aspect ratio */
+  border-radius: 8px;
+  object-fit: cover; /* maintain aspect ratio, cover cell */
+  display: block;    /* remove inline gap below images */
+  max-width: 100%;   /* ensure image does not exceed grid cell */
+}
+
+/* End of Media container for Clear Guide Medical */
+
+.job-entry p {
+  margin-bottom: 1.2em; /* adjust as needed */
+}
+
+.job-entry h4 {
+  font-size: 1rem; /* adjust size (e.g., 0.9rem for even smaller) */
+  margin-top: 0.5em;
+}
+
+
+.job-entry ul {
+  margin-bottom: 0.5rem;
+  margin-left: 1.5em;
+}
+
+.job-entry:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+
+/* For Project section  */
+
+.project ul {
+  margin-bottom: 0.5rem;
+  margin-left: 1.5em;
+}
+
+.project h4 {
+  margin-top: 1.0rem;
+}
+
+/* END for Project section  */
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .home-intro {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .intro-text {
+    align-items: center;
+  }
+
+  .job-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-entry .logo {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .media-container1 {
+    max-width: 100%;
+  }
+
+  .media-video1 {
+    max-width: 100%;
+  }
+
+  .media-images1 {
+    max-width: 100%;
+    grid-template-columns: 1fr; /* stack images vertically on small screens */
+  }
+}
